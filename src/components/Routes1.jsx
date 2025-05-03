@@ -1,5 +1,6 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 import Results from './Results';
+import NotFound from './NotFound';
 
 export default function Routes1() {
   return (
@@ -10,6 +11,7 @@ export default function Routes1() {
         <Route path="/images" element={<Results />} />
         <Route path="/news" element={<Results />} />
         <Route path="/videos" element={<Results />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   );
